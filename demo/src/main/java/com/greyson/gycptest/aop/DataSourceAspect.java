@@ -25,7 +25,7 @@ import com.greyson.gycptest.util.LogUtil;
  * @since  [产品/模块版本]
  */
 @Aspect
-@Component
+@Component//相当于作为bean被容器实例化注入
 @EnableAspectJAutoProxy(proxyTargetClass = true)//基于cglib库代理
 public class DataSourceAspect {
 	 @Pointcut("execution(* com.greyson.gycptest.dao.*.*(..))")//切点

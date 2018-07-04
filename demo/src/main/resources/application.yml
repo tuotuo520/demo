@@ -7,13 +7,13 @@ spring:
         #-------------- start ----------------# (1)
         master:
           #基本属性--注意，这里的为【jdbcurl】-- 默认使用HikariPool作为数据库连接池
-          jdbcurl: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+          jdbcurl: jdbc:mysql://127.0.0.1:3306/myproject?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
           username: root
           password: 123456
           driver-class-name: com.mysql.jdbc.Driver
         slave:
           #基本属性--注意，这里为 【url】-- 使用 druid 作为数据库连接池
-          url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+          url: jdbc:mysql://127.0.0.1:3306/myproject?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
           username: root
           password: 123456
           driver-class-name: com.mysql.jdbc.Driver
@@ -52,3 +52,11 @@ pagehelper:
     supportMethodsArguments: true
     params: count=countSql
     returnPageInfo: check
+#绝对路径地址    
+static:
+	url:  /usr/local/static
+file:
+	profilepictures:
+		url: file/profilepictures/
+	backgroundpictures:
+		url: file/backgroundpictures/
