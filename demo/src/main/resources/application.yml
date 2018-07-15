@@ -52,11 +52,11 @@ pagehelper:
     supportMethodsArguments: true
     params: count=countSql
     returnPageInfo: check
-#绝对路径地址    
-static:
-	url:  /usr/local/static
-file:
-	profilepictures:
-		url: file/profilepictures/
-	backgroundpictures:
-		url: file/backgroundpictures/
+##绝对路径地址    
+#static:
+#	url:  /usr/local/static
+#file:
+#	profilepictures:
+#		url: file/profilepictures/
+#	backgroundpictures:
+#		url: file/backgroundpictures/

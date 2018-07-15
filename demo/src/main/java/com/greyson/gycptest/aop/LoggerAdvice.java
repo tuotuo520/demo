@@ -41,12 +41,12 @@ public class LoggerAdvice {
 		logger.info(parseParames(joinPoint.getArgs()));
 	}
 	
-	@AfterReturning("within(com.favorites..*) && @annotation(loggerManage)")
+	@AfterReturning("within(com.favorites..*) && @annotation(loggerManager)")
 	public void addAfterReturningLogger(JoinPoint joinPoint, LoggerManager loggerManager) {
 		logger.info("执行 " + loggerManager.description() + " 结束");
 	}
 	
-	@AfterThrowing(pointcut = "within(com.favorites..*) && @annotation(loggerManage)", throwing = "ex")
+	@AfterThrowing(pointcut = "within(com.favorites..*) && @annotation(loggerManager)", throwing = "ex")
 	public void addAfterThrowingLogger(JoinPoint joinPoint, LoggerManager loggerManager, Exception ex) {
 		logger.error("执行 " + loggerManager.description() + " 异常", ex);
 	}
