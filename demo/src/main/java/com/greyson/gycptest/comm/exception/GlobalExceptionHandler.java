@@ -1,4 +1,4 @@
-package com.greyson.gycptest.comm;
+package com.greyson.gycptest.comm.exception;
 
 import javax.servlet.http.HttpServletRequest;
 
