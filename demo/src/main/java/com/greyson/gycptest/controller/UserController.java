@@ -30,4 +30,11 @@ public class UserController {
 		return userService.findAllUser(pageNum, pageSize);
 
 	}
+	
+	@GetMapping("/hello")
+	public String getUsers () {
+	    return "Hello Spring Security";
+	}
+	    
+	
 }

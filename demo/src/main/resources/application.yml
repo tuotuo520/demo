@@ -60,3 +60,12 @@ pagehelper:
 #		url: file/profilepictures/
 #	backgroundpictures:
 #		url: file/backgroundpictures/
+
+security:
+  browser:
+    loginPage: /login.html
+    loginType: REDIRECT #登陆成功后返回json失败重定向
+  
+
+
+
