@@ -1,6 +1,7 @@
 package com.greyson.gycptest.comm;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
 @ConfigurationProperties(prefix = "security")
 public class SecurityProperties {

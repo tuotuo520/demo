@@ -16,7 +16,7 @@ import org.slf4j.Marker;
  * @since  [产品/模块版本]
  */
 public class LogUtil {
-private static Logger logger = LoggerFactory.getLogger("sasLog");
+private static Logger logger = LoggerFactory.getLogger("gycptest");
 	
 	private LogUtil(){};
 	
